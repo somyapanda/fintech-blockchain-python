@@ -1,1 +1,1 @@
-# fintect-blockchain-python-homework
+# fintech-blockchain-python-homework

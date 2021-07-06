@@ -40,11 +40,11 @@ project
         hd-wallet-derive/hd-wallet-derive.php script
         - test that you can run the ./derive script 
         
-![Symlink_Derive]("./Screenshots/symlink_derive.png")
+![Symlink_Derive](Screenshots/symlink_derive.png)
 
         - create a file called `wallet.py`
      
-![Wallet Tree]("./Screenshots/tree.png")
+![Wallet Tree](Screenshots/tree.png)
    
     2. Setup constants:  
         - create a file called `constants.py`
@@ -80,13 +80,13 @@ project
                 - format (--format=json) to parse the
                 output into a JSON object using json.load
                 (output)
-    
-![HD Wallet Derive Execute]("./Screenshots
-hd_wallet_derive_execute.png")
+
+![HD Wallet Derive Execute](Screenshots/hd_wallet_derive_execute.png)
+
       - create a dictionary object called `coins` that uses the `derive_wallets` function to derive
       `ETH` and `BTCTEST` wallets
       
-![Wallet Object]("./Screenshots/wallet_object.png")
+![Wallet Object](Screenshots/wallet_object.png)
       
     5. Linking the transaction signing libraries
         - Use `bit` and `web3.py` to leverage the keys stored in the `coins` object by creating three
@@ -135,7 +135,7 @@ hd_wallet_derive_execute.png")
                    faucet's).
                 - screenshot the confirmation of the transaction:
               
-![BTC_TEST]("./Screenshots/btc_test.png")
+![BTC_TEST](Screenshots/btc_test.png)
 
             - Local PoA Ethereum transaction
                 - add ETH addresses `0x7c63fb6a44327EDBC025907B1226e0Fdb04fF6b8` and
@@ -149,5 +149,5 @@ hd_wallet_derive_execute.png")
                   `w3.middleware_onion.inject(geth_poa_middleware, layer=0)`
                 - due to a bug in `web3.py`, we need to send a transaction or two with `MyCrypto` first, since the `w3.eth.generateGasPrice()` function does not work with an empty chain. We use ETH address privkey, or node keystore files.
                 - send a transaction from the MyCrypto wallet account `0x97D71601E848c06c4965b87A77853115BAC5B00b` to ethereum address `0x7c63fb6a44327EDBC025907B1226e0Fdb04fF6b8`
-              
-![ETH Test]("./Screenshots/eth_test.png")
+
+![ETH Test](Screenshots/eth_test.png)
